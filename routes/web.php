@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return "Bienvenido ";
+
+
+    return "Bienveido a Salud Ocupacional";
+
 });
