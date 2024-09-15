@@ -24,3 +24,7 @@ Route::get('/', function () {
 route ::get('celulares', function(){
    return"Deko putito" ;
 });
+
+route ::get('PC', function(){
+    return"Deko el rompe QKS" ;
+ });
