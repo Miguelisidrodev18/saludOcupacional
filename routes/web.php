@@ -15,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return "Bienveido a Salud Ocupacional";
+
+
+    return "Bienvenido a Salud Ocupacional";
+
+});
+
+route ::get('celulares', function(){
+   return"Deko putito" ;
 });
