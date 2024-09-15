@@ -21,5 +21,5 @@ Route::get('/', function () {
 });
 
 route ::get('celulares', function(){
-   return"Deko putito" ;
+   return"Comercio electronico" ;
 });
