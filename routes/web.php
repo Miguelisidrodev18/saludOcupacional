@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+//EL MIGUEL SE LA COME UWU
 /*
 |--------------------------------------------------------------------------
 | Web Routes
