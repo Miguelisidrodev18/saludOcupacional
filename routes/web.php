@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+//EL MIGUEL SE LA COME UWU
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,5 +22,12 @@ Route::get('/', function () {
 });
 
 route ::get('celulares', function(){
-   return"Comercio electronico" ;
+
+
+   return"Deko putito" ;
 });
+
+route ::get('PC', function(){
+    return"Deko el rompe QKS" ;
+ });
+
