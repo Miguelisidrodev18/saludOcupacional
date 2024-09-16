@@ -24,7 +24,7 @@ Route::get('/', function () {
 route ::get('celulares', function(){
 
 
-   return"Deko putito" ;
+   return"Deko putito & Mikys prra" ;
 });
 
 route ::get('PC', function(){
