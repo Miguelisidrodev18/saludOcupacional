@@ -1,33 +1,25 @@
 <?php
 
+use App\Http\Controllers\ServiciosCondiController;
+use App\Http\Controllers\ServiciosController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
-//EL MIGUEL SE LA COME UWU
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+Route::get('/', HomeController::class);
 
-Route::get('/', function () {
-
-
-    return "Bienvenido a Salud Ocupacional";
-
+Route::controller(ServiciosController::class)->group(function() {
+    Route::get('servicios', 'index');
+    Route::get('servicios/create', 'create');
+    Route::get('servicios/{servicio}/{area}', 'show');
 });
 
-route ::get('celulares', function(){
-
-
-   return"Deko putito" ;
+Route::controller(ServiciosCondiController::class)->group(function() {
+    Route::get('servicioscondi', 'index');
+    Route::get('servicioscondi/create', 'create');
+    Route::get('servicioscondi/{servicio}/{area}', 'show');
 });
 
-route ::get('PC', function(){
-    return"Deko el rompe QKS" ;
- });
 
+Route::get('users/{id}', function ($id) {
+
+});
