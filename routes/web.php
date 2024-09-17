@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\PacientesController;
 use Illuminate\Support\Facades\Route;
+
 
 //EL MIGUEL SE LA COME UWU
 /*
@@ -31,3 +33,8 @@ route ::get('PC', function(){
     return"Deko el rompe QKS" ;
  });
 
+ Route::controller(PacientesController::class)->group(function(){
+    route::get('pacientes','index');
+    route::get('pacientes/create', 'create');
+    route::get('pacientes/{paciente}','show');
+ });
