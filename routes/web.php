@@ -25,6 +25,8 @@ Route::get('/', function () {
 
 
 
+
+
  Route::controller(PacientesController::class)->group(function(){
     route::get('pacientes','index');
     route::get('pacientes/create', 'create');
