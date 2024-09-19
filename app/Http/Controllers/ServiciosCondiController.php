@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ServiciosCondiController extends Controller
 {
     public function index() {
-        return "Bienvenido a la Gestión de Servicios Condiconales de la Clínica";
+        return "Bienvenido a la Gestión de Servicios Condicionales de la Clínica";
     }
 
     public function create() {
