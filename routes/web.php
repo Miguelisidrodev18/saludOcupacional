@@ -14,13 +14,6 @@ Route::controller(ServiciosController::class)->group(function() {
     Route::get('servicios/{servicio}/{area}', 'show');
 });
 
-Route::controller(ServiciosCondiController::class)->group(function() {
-    Route::get('servicioscondi', 'index');
-    Route::get('servicioscondi/create', 'create');
-    Route::get('servicioscondi/{servicio}/{area}', 'show');
-});
-
-
 Route::get('users/{id}', function ($id) {
 
 });

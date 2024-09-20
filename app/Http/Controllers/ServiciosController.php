@@ -7,18 +7,18 @@ use Illuminate\Http\Request;
 class ServiciosController extends Controller
 {
     public function index() {
-        return "Bienvenido a la Gestión de Servicios de la Clínica";
+        return view('servicios.index');
     }
 
     public function create() {
-        return "En esta página podrás crear un nuevo registro para un servicio";
+        return view('servicios.create');
     }
 
     public function show($servicio, $area = null) {
-        if($servicio) {
-            return "Bienvenido al servicio: $servicio, del area de $area";
-        } else {
-            return "Bienvenido al servicio: $servicio"; 
-        }
+        return view('servicios.show', compact('servicio'));
+    }
+
+    public function condi() {
+        return view('servicios.condi');
     }
 }
