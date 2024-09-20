@@ -27,7 +27,7 @@ Route::get('users/{id}', function ($id) {
  
  Route::controller(InformeMedicoController::class)->group(function(){
     route::get('InformeMedico','index');
-    route::get('ImformeMedico/create', 'create');
+    route::get('InformeMedico/create', 'create');
     route::get('InformeMedico/{informe}','show');
  });
 
