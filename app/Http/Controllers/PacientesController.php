@@ -7,15 +7,15 @@ use Illuminate\Http\Request;
 class PacientesController extends Controller
 {
     public function index(){
-        return "Bienvenido a la pagina de los pacientes";
+        return view('pacientes.index');
     }
 
     public function create(){
-        return "Aqui podras registrar nuevos pacientes";
+        return view('pacientes.create');
     }
 
     public function show($paciente){
-        return "Información del paciente: $paciente";
+        return view('pacientes.show', compact('paciente'));
 
     }
 }
