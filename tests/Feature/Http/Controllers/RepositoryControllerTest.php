@@ -49,7 +49,7 @@ class RepositoryControllerTest extends TestCase
         $user = User::factory()->create();
 
         $this->actingAs($user)
-            ->post("repositories/ $repository->id", $data)
+            ->put("repositories/$repository->id", $data)
             ->assertRedirect("repositories/$repository->id/edit");
         
         $this->assertDatabaseHas('repositories', $data);
