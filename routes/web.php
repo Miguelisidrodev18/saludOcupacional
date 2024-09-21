@@ -23,5 +23,3 @@ Route::get('users/{id}', function ($id) {
     route::get('pacientes/create', 'create');
     route::get('pacientes/{paciente}','show');
  });
-
-Route::resource('repositories', App\Http\Controllers\RepositoryController::class)->middleware('auth');
