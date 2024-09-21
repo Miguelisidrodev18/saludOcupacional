@@ -24,12 +24,7 @@ Route::get('users/{id}', function ($id) {
     route::get('pacientes/create', 'create');
     route::get('pacientes/{paciente}','show');
  });
- 
- Route::controller(InformeMedicoController::class)->group(function(){
-    route::get('InformeMedico','index');
-    route::get('InformeMedico/create', 'create');
-    route::get('InformeMedico/{informe}','show');
- });
+
 
 
 Route::resource('repositories', App\Http\Controllers\RepositoryController::class)->middleware('auth');
