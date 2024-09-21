@@ -24,14 +24,4 @@ Route::get('users/{id}', function ($id) {
     route::get('pacientes/{paciente}','show');
  });
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
-
 Route::resource('repositories', App\Http\Controllers\RepositoryController::class)->middleware('auth');
